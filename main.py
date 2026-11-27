@@ -11,10 +11,12 @@ I can't send wool socks where you are, and I didn't bring a question. Just this,
 
 Thank you."""
 
+
 def main() -> None:
     output_dir = Path(os.environ.get("MAKEFUN_OUTPUT_DIR", "/output"))
     output_dir.mkdir(parents=True, exist_ok=True)
     (output_dir / "entry.txt").write_text(TEXT, encoding="utf-8", newline="\n")
+
 
 if __name__ == "__main__":
     main()
